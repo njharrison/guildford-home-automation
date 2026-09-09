@@ -1,29 +1,11 @@
 # Guildford Home Automation
 
-Static marketing website for Guildford Home Automation.
+Local source for the Guildford Home Automation website.
 
-## Current structure
+## Deployment
 
-- `index.html` - homepage
-- `automation.html` - Smart Home
-- `energy.html` - Energy Optimisation
-- `energy-advice.html` - Independent Energy Advice
-- `test-house.html` - Test House
-- `pricing.html` - Pricing
-- `contact.html` - Contact
-- `privacy.html` - Privacy
-- `assets/site.css` - site styles
-- `assets/site.js` - site JavaScript
-- `assets/images/` - replaceable photography placeholders
+The site deploys to Cloudflare Workers from the `main` branch using `npx wrangler deploy`.
 
-## Hosting
+Static assets are served directly from the repository. Requests under `/api/*` run through `src/worker.js` first. The contact form posts to `/api/contact`, which uses the Cloudflare Email Service `EMAIL` binding to deliver enquiries to a verified destination address.
 
-The site is plain HTML, CSS and JavaScript and requires no build step. It is suitable for direct deployment with Cloudflare Pages.
-
-## Photography placeholders
-
-Real photography can replace the files in `assets/images/` using the same filenames. The layouts use cropped responsive images, so landscape photographs with the main subject near the centre work best.
-
-## Copy rules
-
-Website copy intentionally avoids em dashes.
+The public site is https://guildfordhomeautomation.co.uk/
