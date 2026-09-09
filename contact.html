@@ -1,1 +1,78 @@
-<!doctype html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Contact | Guildford Home Automation</title><link rel="stylesheet" href="assets/site.css"></head><body><header><div class="wrap nav"><a class="brand" href="index.html">Guildford Home Automation<span>Smart home & energy engineering</span></a><nav><a href="automation.html">Smart Home</a><a href="energy.html">Energy Optimisation</a><a href="energy-advice.html">Independent Energy Advice</a><a href="test-house.html">Test House</a><a href="pricing.html">Pricing</a></nav></div></header><main><section class="pagehero"><div class="wrap"><div class="eyebrow">Contact</div><h1>What would you like your house to do?</h1><p class="lead">Tell us what you already have, what is annoying you, or the idea you want to explore.</p></div></section><section><div class="wrap"><form class="form" action="mailto:hello@guildfordhomeautomation.co.uk" method="post" enctype="text/plain"><label>Name<input name="name" required></label><label>Email<input name="email" type="email" required></label><label>What are you interested in?</label><div class="checks"><label class="check"><input type="checkbox" name="interest" value="energy optimisation">Energy optimisation</label><label class="check"><input type="checkbox" name="interest" value="independent energy advice">Independent solar/battery comparison</label><label class="check"><input type="checkbox" name="interest" value="heating">Heating or hot water</label><label class="check"><input type="checkbox" name="interest" value="automation">Home automation</label><label class="check"><input type="checkbox" name="interest" value="integration">Integrating existing devices</label><label class="check"><input type="checkbox" name="interest" value="complicated">Something gloriously complicated</label></div><label>Tell us about it<textarea name="message" required></textarea></label><button class="btn" type="submit">Send enquiry</button></form></div></section></main><footer><div class="wrap footer-grid"><strong>Guildford Home Automation</strong><span>© <span data-year></span></span></div></footer><script src="assets/site.js"></script></body></html>
+<!doctype html>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact | Guildford Home Automation</title>
+  <meta name="description" content="Contact Guildford Home Automation about smart home integration, energy optimisation or independent solar and battery advice in Guildford and Surrey.">
+  <link rel="canonical" href="https://guildfordhomeautomation.co.uk/contact.html">
+  <meta property="og:title" content="Contact | Guildford Home Automation">
+  <meta property="og:description" content="Tell us what you would like your house to do, or what energy problem you want to solve.">
+  <meta property="og:url" content="https://guildfordhomeautomation.co.uk/contact.html">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="index.html">Guildford Home Automation<span>Smart home &amp; energy engineering</span></a>
+    <nav>
+      <a href="automation.html">Smart Home</a>
+      <a href="energy.html">Energy Optimisation</a>
+      <a href="energy-advice.html">Independent Energy Advice</a>
+      <a href="test-house.html">Test House</a>
+      <a href="pricing.html">Pricing</a>
+    </nav>
+  </div>
+</header>
+<main>
+  <section class="pagehero">
+    <div class="wrap">
+      <div class="eyebrow">Contact</div>
+      <h1>What would you like your house to do?</h1>
+      <p class="lead">Tell us what you already have, what is annoying you, or the idea you want to explore.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="mini-card" data-form-status hidden aria-live="polite"></div>
+
+      <form class="form" action="/api/contact" method="post" data-contact-form>
+        <label>Name<input name="name" maxlength="120" autocomplete="name" required></label>
+        <label>Email<input name="email" type="email" maxlength="254" autocomplete="email" required></label>
+
+        <label>What are you interested in?</label>
+        <div class="checks">
+          <label class="check"><input type="checkbox" name="interest" value="Reduce energy costs">Reduce energy costs</label>
+          <label class="check"><input type="checkbox" name="interest" value="Make better use of solar or battery">Make better use of solar or battery</label>
+          <label class="check"><input type="checkbox" name="interest" value="Independent solar or battery comparison">Compare solar or battery options before I buy</label>
+          <label class="check"><input type="checkbox" name="interest" value="Heating or hot water">Improve heating or hot water</label>
+          <label class="check"><input type="checkbox" name="interest" value="Lighting">Lighting</label>
+          <label class="check"><input type="checkbox" name="interest" value="Blinds or curtains">Blinds or curtains</label>
+          <label class="check"><input type="checkbox" name="interest" value="Integrate existing smart devices">Integrate existing smart devices</label>
+          <label class="check"><input type="checkbox" name="interest" value="Security or presence">Security or presence</label>
+          <label class="check"><input type="checkbox" name="interest" value="Something gloriously complicated">Something gloriously complicated</label>
+        </div>
+
+        <label>Tell us about it<textarea name="message" maxlength="5000" required></textarea></label>
+
+        <div aria-hidden="true" style="position:absolute;left:-10000px;top:auto;width:1px;height:1px;overflow:hidden">
+          <label>Company website<input name="company_website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <button class="btn" type="submit">Send enquiry</button>
+        <p class="local-note">We will use your details only to respond to your enquiry and provide any service you ask us about. See our <a href="privacy.html">privacy notice</a>.</p>
+      </form>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="wrap footer-grid">
+    <strong>Guildford Home Automation</strong>
+    <span><a href="mailto:hello@guildfordhomeautomation.co.uk">hello@guildfordhomeautomation.co.uk</a> · <a href="privacy.html">Privacy</a> · © <span data-year></span></span>
+  </div>
+</footer>
+<script src="assets/site.js"></script>
+</body>
+</html>
